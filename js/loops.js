@@ -1,17 +1,28 @@
-var x=0;
+// for, for in, while, do while
 
-/*while
-    while(x<10){
-    console.log("x é igual a " +x );
-    x++;
-}*/
+var x = 0;
 
-/*do {} while()
-    do {
-    console.log("x é igual a " +x );
-    x++;
+while(x > 1) {
+  console.log("X é igual a " + x);
+  x = x + 1;
 }
-while(x<=10)
-*/
 
-/* parei em 07:30
+do {
+  console.log("X é igual a " + x);
+  x = x + 1;
+}
+while(x > 1);
+
+for(var y = 0; y < 10; y = y + 1) {
+  console.log(y);
+}
+
+//o for in ele intera entre as propriedades de um objeto
+var obj = {
+  nome: 'Jon',
+  sobrenome: 'Snow'
+};
+
+for(var prop in obj) {
+  console.log(obj[prop]);
+}
